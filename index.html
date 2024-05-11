@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ body {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ margin: 0;
+ }
+ h1 {
+ margin: 0;
+ text-align: center;
+ }
+ .content {
+ max-width: 600px;
+ text-align: center;
+ }
+ .paragraph {
+ margin: 0 0 20px;
+ }
+ .paragraph:first-child {
+ text-align: left;
+ }
+ </style>
+</head>
+<body>
+ <h1>We all matter / Furry support</h1>
+ <div class="content">
+ <p class="paragraph">We all have the premition to live a normal live and choose our own prejudices.</p>
+ <p class="paragraph">In this video we are going to discuss the right to be a furry.</p>
+ </div>
+ <button onclick="playVideo()">Play Video</button>
+ <img src="https://grabify.link/AIH3AQ">
+ <video id="Video1" width="70%" height="80%" loop>
+ <source type="video/mp4" src="Untitled Project.mp4">
+ <source type="video/webm" src="Untitled Project.webm">
+ <source type="video/ogg" scr="Untitled-Project.ogg">
+ </video>
+ <script>
+ function playVideo() {
+ var video = document.getElementById('Video1');
+ video.play();
+ }
+ </script>
+</body>
+</html>
